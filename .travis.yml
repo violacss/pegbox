@@ -20,6 +20,7 @@ deploy:
     api_key:
       secure: Giyl813/8oTBKGciwdmvT+OcJMpxzUTjKaRpKhMksrGhbGS1ucEa9+TUR9QxCs9aOEjLx3n568bYgReJ9+1f4RiMgYSEmZKkGhZZKVyXwJcnNGauUz22iiV1PITONUaYqurP1qjyE/rsdjPyGfxCsY0G9hsv1KuXm5i2Z+9f30bCHhqN1BqWGKohtBU6jlnwCgEL4/vC+mCt2RHOmRpStxX/be66cbTdqukpl+yHqzR0IiIwf2Rr29C7pocvOPXYM3RQbGhl3qEQ/p9sCwi9gPDtEGVD2a4tO4228+eXM2rqSkA6KXFvUlDETOc5AS7/yduRxvfd1MRmYa4GiorvrtNY3QvJzvEmbV2XZlAr2qGGLMRiefyP0i4f1s8pzQpHhZKrI5pyex4zBGNr8pTN6KbkZU6I9PJvil49ewpQAhaM1iscRo0Kgr9LMriDVV3CnRjBAI7Hl5KT9EDgV0i5JHv20Q3hKVJNRm52q5dnTdpJCS/1YngofPkel+RZAlSOFFt09iJUWNvOKktPoDXmiYZQqB664dkRdEUX+bnmZ6RB6YHixYtOh91KUxyrYhRS0y9AmGKlW60ugWVhJlFcDO76u6eG2bwdY0D4zHvnU2VwiwKZtsyf/UkglafWoAwor6UOMXT9STz1bwpwPm9BMUeFfZDbSkkp9CZu4iDXeSw=
     name: $TRAVIS_TAG
+    body: "#### Please read the [CHANGELOG](https://github.com/violacss/pegbox/blob/master/CHANGELOG.md) for more details."
     overwrite: true
     on:
       repo: violacss/pegbox
