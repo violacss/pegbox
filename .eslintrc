@@ -1,0 +1,18 @@
+{
+	"root": true,
+	"rules": {
+		"semi": [
+			"off",
+			"always"
+		],
+		"quotes": [
+			"warn",
+			"double"
+		]
+	},
+	"env": {
+		"node": true
+	},
+	"extends": "eslint:recommended",
+	"parser": "babel-eslint"
+}

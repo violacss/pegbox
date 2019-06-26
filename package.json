@@ -1,0 +1,41 @@
+{
+	"name": "@violacss/pegbox",
+	"version": "0.0.1",
+	"description": "It is a supplementary JavaScript library that tunes ViolaCSS",
+	"main": "dist/cjs.js",
+	"scripts": {
+		"build": "babel src -d dist --delete-dir-on-start",
+		"release": "standard-version",
+		"test": "jest && eslint"
+	},
+	"repository": "https://github.com/violacss/pegbox.git",
+	"author": {
+		"name": "Amir Hossein Abdolkhalegh",
+		"url": "https://twitter.com/amirhosseinab"
+	},
+	"license": "MIT",
+	"keywords": [
+		"violacss"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"files": [
+		"dist"
+	],
+	"devDependencies": {
+		"@babel/cli": "^7.4.4",
+		"@babel/core": "^7.4.5",
+		"@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+		"@babel/preset-env": "^7.4.5",
+		"babel-eslint": "^10.0.2",
+		"babel-jest": "^24.8.0",
+		"babel-plugin-add-header-comment": "^1.0.3",
+		"eslint": "^6.0.1",
+		"jest": "^24.8.0",
+		"standard-version": "^6.0.1"
+	},
+	"dependencies": {
+		"node-sass": "^4.12.0"
+	}
+}
