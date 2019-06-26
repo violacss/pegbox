@@ -1,6 +1,6 @@
 {
 	"name": "@violacss/pegbox",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "It is a supplementary JavaScript library which configures ViolaCSS",
 	"main": "dist/index.js",
 	"unpkg": "dist/index.js",
