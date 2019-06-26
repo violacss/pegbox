@@ -7,7 +7,7 @@
 [![Downloads][downloads]](https://www.npmjs.com/package/@violacss/pegbox)
 [![License][license]](https://github.com/violacss/pegbox/blob/master/LICENSE)
 
-It is a supplementary JavaScript library that tunes the ViolaCSS.
+It is a supplementary JavaScript library which configures the ViolaCSS.
 
 [version]: https://img.shields.io/npm/v/@violacss/pegbox.svg?logo=npm&style=flat-square
 [travis]: https://img.shields.io/travis/violacss/pegbox.svg?logo=travis&style=flat-square

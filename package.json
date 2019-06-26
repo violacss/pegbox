@@ -1,12 +1,13 @@
 {
 	"name": "@violacss/pegbox",
 	"version": "0.0.1",
-	"description": "It is a supplementary JavaScript library that tunes ViolaCSS",
+	"description": "It is a supplementary JavaScript library which configures ViolaCSS",
 	"main": "dist/cjs.js",
+	"unpkg": "dist/cjs.js",
 	"scripts": {
 		"build": "babel src -d dist --delete-dir-on-start",
 		"release": "standard-version",
-		"test": "yarn run lint && jest",
+		"test": "yarn run lint && jest && codecov",
 		"lint": "eslint src test"
 	},
 	"repository": "https://github.com/violacss/pegbox.git",
