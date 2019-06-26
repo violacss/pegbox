@@ -15,11 +15,24 @@ before_script:
 script:
   - yarn run build
 deploy:
-  provider: npm
-  email: amirhosseinab@outlook.com
-  api_key:
-    secure: rV0af7t3N24FeM8DhNbb43j0Sjc3uq1grWyLTMxlts5ML312bw1MDNIV6uPhN/TYU6UCtv1k+6EzcFVjPzsAfy+JwOmwx/ms8QG2PL3IHFVz+jCgC7C5PTvC8i+ydnOFsZyTk3gdW/t+jAcCOrCvpSkaZV4j7QS5CKuHMx0W5oNlrRkrnmuIi08mRcBGZ/F5OxOSODGe1lmbAge81YxaoDxZ7PhRUpjnhFFc8G5Fcs9Q4nRe9b5FiobUKN+EpP/rCPgnSlXp9BSt05kSaIuMS5lO2FB/FnjoM452W6i0rgULh8os1R9G1VbFf2bMQWt26G7AFAgLDs3s2bCX9HxsDVnUVIQceU+A0GKIcGhWyXMApOMS7W5GTA67xTUljAVhf9oQ7h15+PZT1LvsLGAnIHStrdxWDHh2u2ltNGuW2tJX2ISC52QjwJHoxER8ZRJc5ch6E4d0H8s47x9NjksrzAOVfgZJP/SongSfaSMWFOvJHQz4tYcJlRdEAgYXfcXQpgN0eM+kp0dYxEkhthJQq7ptc0wSK7u9jYUj1dtztdSvGdtFcogF024UPpA6H/07muATaubru5xGFhAela6oi9ERwsM/yh6bN3uylAa1zzecaxABzy+A150/YQcIQfrZJeKreBZ4TU0WPjSFGl+enlD64cfV7oC3slU1OtgLptY=
-  on:
-    tags: true
-    branch: master
-  skip_cleanup: true
+
+  - provider: releases
+    api_key:
+      secure: Giyl813/8oTBKGciwdmvT+OcJMpxzUTjKaRpKhMksrGhbGS1ucEa9+TUR9QxCs9aOEjLx3n568bYgReJ9+1f4RiMgYSEmZKkGhZZKVyXwJcnNGauUz22iiV1PITONUaYqurP1qjyE/rsdjPyGfxCsY0G9hsv1KuXm5i2Z+9f30bCHhqN1BqWGKohtBU6jlnwCgEL4/vC+mCt2RHOmRpStxX/be66cbTdqukpl+yHqzR0IiIwf2Rr29C7pocvOPXYM3RQbGhl3qEQ/p9sCwi9gPDtEGVD2a4tO4228+eXM2rqSkA6KXFvUlDETOc5AS7/yduRxvfd1MRmYa4GiorvrtNY3QvJzvEmbV2XZlAr2qGGLMRiefyP0i4f1s8pzQpHhZKrI5pyex4zBGNr8pTN6KbkZU6I9PJvil49ewpQAhaM1iscRo0Kgr9LMriDVV3CnRjBAI7Hl5KT9EDgV0i5JHv20Q3hKVJNRm52q5dnTdpJCS/1YngofPkel+RZAlSOFFt09iJUWNvOKktPoDXmiYZQqB664dkRdEUX+bnmZ6RB6YHixYtOh91KUxyrYhRS0y9AmGKlW60ugWVhJlFcDO76u6eG2bwdY0D4zHvnU2VwiwKZtsyf/UkglafWoAwor6UOMXT9STz1bwpwPm9BMUeFfZDbSkkp9CZu4iDXeSw=
+    file_glob: true
+    file: dist/*
+    on:
+      repo: violacss/pegbox
+      tags: true
+      branch: master
+    skip_cleanup: true
+
+  - provider: npm
+    email: amirhosseinab@outlook.com
+    api_key:
+      secure: rV0af7t3N24FeM8DhNbb43j0Sjc3uq1grWyLTMxlts5ML312bw1MDNIV6uPhN/TYU6UCtv1k+6EzcFVjPzsAfy+JwOmwx/ms8QG2PL3IHFVz+jCgC7C5PTvC8i+ydnOFsZyTk3gdW/t+jAcCOrCvpSkaZV4j7QS5CKuHMx0W5oNlrRkrnmuIi08mRcBGZ/F5OxOSODGe1lmbAge81YxaoDxZ7PhRUpjnhFFc8G5Fcs9Q4nRe9b5FiobUKN+EpP/rCPgnSlXp9BSt05kSaIuMS5lO2FB/FnjoM452W6i0rgULh8os1R9G1VbFf2bMQWt26G7AFAgLDs3s2bCX9HxsDVnUVIQceU+A0GKIcGhWyXMApOMS7W5GTA67xTUljAVhf9oQ7h15+PZT1LvsLGAnIHStrdxWDHh2u2ltNGuW2tJX2ISC52QjwJHoxER8ZRJc5ch6E4d0H8s47x9NjksrzAOVfgZJP/SongSfaSMWFOvJHQz4tYcJlRdEAgYXfcXQpgN0eM+kp0dYxEkhthJQq7ptc0wSK7u9jYUj1dtztdSvGdtFcogF024UPpA6H/07muATaubru5xGFhAela6oi9ERwsM/yh6bN3uylAa1zzecaxABzy+A150/YQcIQfrZJeKreBZ4TU0WPjSFGl+enlD64cfV7oC3slU1OtgLptY=
+    on:
+      repo: violacss/pegbox
+      tags: true
+      branch: master
+    skip_cleanup: true
