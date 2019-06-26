@@ -1,7 +1,7 @@
-import {convert} from '../src/converters';
+import {converters as convert}  from '../src/converters';
 import {types} from 'node-sass';
 
-describe('convert.toSass', () => {
+describe('converters.toSass', () => {
   test('should convert the given number to SASS number', () => {
     const value = 42
     const got = convert.toSASS(value)
@@ -107,7 +107,7 @@ describe('convert.toSass', () => {
   })
 
 })
-describe('convert.toJs', () => {
+describe('converters.toJs', () => {
   test('should convert the given SASS Number to JS number', () => {
     const value = new types.Number(42)
     const got = convert.toJS(value)

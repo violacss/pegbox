@@ -1,6 +1,6 @@
 import {types as sassTypes} from 'node-sass';
 
-export const convert = {
+export const converters = {
   toSASS: toSass(sassTypes),
   toJS: toJs(),
 }
